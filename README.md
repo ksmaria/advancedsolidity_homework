@@ -242,6 +242,48 @@ You can also record your interactions with the executed contract as a short vide
 
 * Submit the link to your GitHub repo on Bootcamp Spot.
 
+## Evaluation Evidence and Submission Notes:
+
+To run this, clone the code from GitHub link [git@github.com:ksmaria/advancedsolidity_homework.git] and launch Ganache, MetaMask, Remix IDE. 
+
+1. Step 1: Compile the KaseiCoin.sol to ensure it is completed successfully. Look for the green tick on the left side as shown in the image below: 
+![alt=""](Images/1.KaseiCoinContract_SuccessfulCompilation.jpg)
+
+2. Step 2: Compile the KaseiCoinCrowdsale.sol to ensure it is completed successfully (Below image is compilation before uncommenting the deployer section). Look for the green tick on the left side as shown in the image below: 
+![alt=""](Images/2.KaseiCoinCrowdsale_SuccessfulCompilation.jpg)
+
+3. Step 3: Compile the KaseiCoinCrowdsale.sol to ensure it is completed successfully (Below image is compilation after uncommenting the deployer section and adding the code). Look for the green tick on the left side as shown in the image below: 
+![alt=""](Images/3.KaseiCoinCrowdsaleDeployer_SuccessfulCompilation.jpg)
+
+4. Step 4: Deploy and Test the Crowdsale on the blockchain.
+    - Connect MetaMask (localhost: 8485) to Ganache Test Network and ensure you have an account added that has funds.
+    ![alt=""](Images/4.MetaMask.jpg)
+
+    - Deploy the KaseiCoin.sol (Below image is with parameters used in my test; Name=Kasei, Symbol=KC, Initial_Supply=9999). 
+    ![alt=""](Images/5.DeployKaseiCoinWGanacheAndMetaMask.jpg)
+
+    - Deploy the KaseiCoinCrowdsale.sol (Below image is with parameters used in my test; Rate=1 (means 1 token is 1 Wei), Wallet should be set to address of the Crowdsale contract. Token address should be the KaseiCoin Contracts address). 
+    ![alt=""](Images/6.DeployKaseiCoinCrowdsale.jpg)
+
+    - Add Minter to the KaseiCoin Contract (Copy the address of the KaseiCoinCrowdSale to put in the input field and this as the minter). You can use it in isMinter to see if the address has been added to be a minter (would return true)
+    ![alt=""](Images/7.AddMinter.jpg)
+    ![alt=""](Images/8.isMinter.jpg)
+
+    - Use a test account from your Ganache to add to the input box next to Buy Tokens (Add the value in the top field - I added 10 Wei and because the rate was 1; this means 10 tokens)
+    ![alt=""](9.BuyTokensTestAccount1-10Wei.jpg)
+
+    - Use another test account from your Ganache to add to the input box next to Buy Tokens (Add the value in the top field - I added 12 Wei and because the rate was 1; this means 12 tokens)
+    ![alt=""](10.BuyTokensTestAccount2-10Wei.jpg)
+
+    - You can keep checking the balance of tokens raised using the tokenSupply button etc. Below are imaged from start, middle and end
+    ![alt=""](11.WeiRaisedStart.jpg)
+
+    ![alt=""](12.WeiRaisedMiddle.jpg)
+    
+    ![alt=""](13.WeiRaisedEnd.jpg)
+    
+    
+
 ---
 
 © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
