@@ -270,17 +270,19 @@ To run this, clone the code from GitHub link [git@github.com:ksmaria/advancedsol
     ![alt=""](Images/8.isMinter.jpg)
 
     - Use a test account from your Ganache to add to the input box next to Buy Tokens (Add the value in the top field - I added 10 Wei and because the rate was 1; this means 10 tokens)
-    ![alt=""](9.BuyTokensTestAccount1-10Wei.jpg)
+    ![alt=""](Images/8.isMinter.jpg)
+    ![alt=""](Images/9.BuyTokensTestAccount1Wei10.jpg)
 
     - Use another test account from your Ganache to add to the input box next to Buy Tokens (Add the value in the top field - I added 12 Wei and because the rate was 1; this means 12 tokens)
-    ![alt=""](10.BuyTokensTestAccount2-10Wei.jpg)
+    ![alt=""](Images/10.BuyTokensTestAccount2Wei12.jpg)
+
 
     - You can keep checking the balance of tokens raised using the tokenSupply button etc. Below are imaged from start, middle and end
-    ![alt=""](11.WeiRaisedStart.jpg)
+    ![alt=""](Images/11.WeiRaisedStart.jpg)
 
-    ![alt=""](12.WeiRaisedMiddle.jpg)
+    ![alt=""](Images/12.WeiRaisedMiddle.jpg)
     
-    ![alt=""](13.WeiRaisedEnd.jpg)
+    ![alt=""](Images/13.WeiRaisedEnd.jpg)
     
     
 
